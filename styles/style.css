@@ -1,0 +1,50 @@
+body {
+    background-color: #000000;
+    font-family: monospace;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 24%;
+    padding: 0;  
+}
+
+.links a {
+    padding: 5px;
+    color:#00D700;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #3465a4;
+}
+
+.message {
+    color: #FFFFFF; 
+    font-size: 1.3em;   
+}
+
+.projects {
+    width: 20%;
+    padding: 5px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.project {
+    border: 1px solid #FFFFFF;   
+    margin-right: 5px;; 
+}
+
+.projects p {
+    color: #FFFFFF;
+}
