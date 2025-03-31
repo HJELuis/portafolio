@@ -58,9 +58,10 @@ body {
 .project div:last-of-type {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
-.project a {
+.project a[class="button-style"] {
     background-color: #00D700;
     cursor: pointer;
     border: none;    
@@ -81,7 +82,7 @@ body {
 }
 
 .project img {
-    width: 60%;
+    max-width: 100%;
     display: block;    
 }
 
