@@ -37,6 +37,22 @@ body {
     font-size: 1.3em;   
 }
 
+.about-me {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+}
+
+.about-me p {
+    font-size: 2em;
+}
+
+.about-me img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 20%;
+}
+
 .projects {
     width: 100%;
     box-sizing: border-box;
