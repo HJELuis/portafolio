@@ -3,13 +3,64 @@ body {
     font-family: monospace;
 }
 
-.menu {
+.about-me {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    gap: 2%;
+    padding: 3%;
 }
 
-.menu p {
-    padding: 0.5em;
+.about-me p {
+    font-size: 1.4em;
+    text-align: justify;   
+}
+
+
+.about-me img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 20%;
+}
+
+.projects {
+    display: flex; 
+    justify-content: space-around;       
+    gap: 5%;
+    width: 94%;
+    margin: 0 auto;
+}
+
+.project {
+    text-decoration: none;
+    padding: 0.6%;
+    border: solid 1px white;
+    width: 396px;
+    transition: transform 0.3s ease;
+    transition: box-shadow 0.3s ease;       
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.3);
+}
+
+.project a {
+    text-decoration: none;
+}
+
+.project h2,p {
+    color: #FFFFFF;        
+}
+
+.project p {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
 }
 
 .links {
@@ -23,86 +74,25 @@ body {
 
 .links a {
     padding: 5px;
-    color:#00D700;
+    color:#FFFFFF;
     font-size: 1.3em;
     text-decoration: none;
+    
 }
 
-.links a:hover {
-    color: #3465a4;
+.links li {
+    transition: transform 0.3s ease;
 }
 
-.message {
-    color: #FFFFFF; 
-    font-size: 1.3em;   
+.links li:hover {   
+    transform: scale(1.1);   
+    text-decoration: underline;
 }
 
-.about-me {
-    display: flex;
-    align-items: center;
-    padding: 5%;
+.links a:hover {    
+    font-weight: 700;
 }
 
-.about-me p {
-    font-size: 2em;
-}
 
-.about-me img{
-    border-radius: 50%;
-    object-fit: cover;
-    width: 20%;
-}
-
-.projects {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 5px;
-    display: flex;
-    flex-flow: column wrap;
-}
-
-.project {
-    border: 1px solid #FFFFFF;  
-    display: flex;     
-}
-
-.project div {
-    flex-basis: 50%;
-    padding: 5px;   
-}
-
-.project div:last-of-type {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.project a[class="button-style"] {
-    background-color: #00D700;
-    cursor: pointer;
-    border: none;    
-    color: #000000;
-    font-size: 1.1em;
-    padding: 3px;
-    text-decoration: none;
-}
-
-.project a:hover {
-    background-color: #000000;
-    color: #00D700;
-    font-size: 1.1em;
-}
-
-.project p {
-    font-size: 1.1em;
-}
-
-.project img {
-    max-width: 100%;      
-}
-
-.project h2,p {
-    color: #FFFFFF;    
-}
 
 
